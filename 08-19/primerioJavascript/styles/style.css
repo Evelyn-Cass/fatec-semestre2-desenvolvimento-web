@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: beige;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+input {
+    padding: 3px 10px;
+    border-radius: 30px;
+}
+
+#nome {
+    margin-bottom: 10px;
+}
+
+#sobrenome {
+    margin-bottom: 10px;
+}
+
+#nomeCompleto {
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid crimson;
+    padding: 5px 20px;
+    border-radius: 30px;
+    display: none;
+}
+
+#juntar {
+    margin-right: 10px;
+}
