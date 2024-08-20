@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d3557;
 }
 
 body {
@@ -9,18 +11,28 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    background-color: beige;
+    background-color: #f1faee;
+    height: 98vh;
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 60%;
+    margin-top: 10px;
 }
 
 input {
-    padding: 3px 10px;
+    border: none;   
     border-radius: 30px;
+    border-bottom: #457b9d solid 3px;
+    margin-top: 3px;
+    padding: 3px 10px;
+}
+
+input:focus {
+    outline: #457b9d solid 3px;
+    background-color: #a8dadc;
 }
 
 #nome {
@@ -33,27 +45,44 @@ input {
 
 #nomeCompleto {
     margin-top: 5px;
+    text-transform: capitalize;
 }
 
-button {
-    padding: 5px 10px;
-    border-radius: 30px;
-    background-color: crimson;
-    color: white;
-    font-weight: bold;
-}
 
 #container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid crimson;
+    border: 2px solid #457b9d;
+    background-color: #a8dadc;
     padding: 5px 20px;
     border-radius: 30px;
     display: none;
 }
+button {
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: #457b9d;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+
+button:hover{
+    background-color: #1d3557;
+}
 
 #juntar {
     margin-right: 10px;
+}
+#limpar{
+    margin-right: 10px;
+}
+
+#aviso {
+    display: none;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
