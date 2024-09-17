@@ -6,6 +6,11 @@
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #457b9d;
 }
 
 body {
@@ -19,45 +24,74 @@ body {
 form {
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 10px;
+    margin: 10px 0;
+    width: 40vw;
 }
 
 label {
     text-align: right;
     padding-right: 5px;
+    padding: 5px 5px;
 }
 
 input {
-    margin-bottom: 10px;
+    margin: 5px 0;
     width: 20vw;
+    padding: 0 2px;
 }
 
-.contianer-faltas{
+.contianer-faltas {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
+    width: 20.5vw;
 }
 
 
-.presenca input, .contianer-faltas input{ 
-width: 40%;
+.presenca input,
+.contianer-faltas input {
+    width: 45%;
 }
 
-button{
+#porcentagem-presenca {
+    background-color: lightgray;
+    margin-right: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lbl-faltas {
+    border: 3px solid #457b9d;
+    border-right: none;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.contianer-faltas {
+    border: 3px solid #457b9d;
+    border-left: none;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+button {
     float: right;
     margin: 3px 0px 0px 5px;
     padding: 3px;
 }
 
 .container {
-    display: none;
+    visibility: hidden;
     border: 3px #457b9d solid;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
 }
 
-#aviso{
-    display: none;
+#aviso {
+    visibility: hidden;
     color: red;
     grid-column-end: 2;
     grid-column-start: 2;
