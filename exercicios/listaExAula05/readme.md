@@ -1,8 +1,8 @@
 
 # Desenvolvimento Web 2 (DW2)
-Professor: Alex Paulo Lopes Batista
-Data de Entrega: 30/09/2024
-Aula 05 – Lista de Exercícios de PHP: 
+Professor: Alex Paulo Lopes Batista <br>
+Data de Entrega: 30/09/2024 <br>
+Aula 05 – Lista de Exercícios de PHP: <br><br>
 Instruções Iniciais:
 1. Leia atentamente todas as instruções iniciais e as tarefas da Lista de Exercícios
 e em caso de dúvidas contate o professor.
