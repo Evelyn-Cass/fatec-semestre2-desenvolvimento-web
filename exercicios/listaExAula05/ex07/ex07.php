@@ -4,32 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
+    <title>Exercício 07</title>
 </head>
 
 <body>
     <a href="../index.html">Voltar</a>
-    <form action="#" method="POST">
+    <form action="ex07resultado.php" method="POST">
 
-        <label for="numero1"><B>Primeiro Número:</B></label>
-        <input type="number" id="numero1" name="numero1" step="0.01" required>
+        <label for="numeros"><B>Números:</B></label>
+        <input type="text" id="numeros" name="numeros" required>
+        <span> Digite os números separados por vírgulas </span>
 
-        <label for="numero2"><B>Segundo Número</B></label>
-        <input type="number" id="numero2" name="numero2" step="0.01" required>
         <div class="buttons">
-            <input type="submit" value="Somar" name="Somar">
-            <input type="reset" value="Limpar" name="Limpar">
+            <input type="submit" value="Média" name="media">
+            <input type="reset" value="Limpar" name="limpar">
         </div>
     </form>
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $n1 = $_POST["numero1"];
-        $n2 = $_POST["numero2"];
-        $soma =  $n1 + $n2;
-        echo "<div class='resultado'> $n1 + $n2 = $soma</div>";
-    }
-    ?>
 
 </body>
 

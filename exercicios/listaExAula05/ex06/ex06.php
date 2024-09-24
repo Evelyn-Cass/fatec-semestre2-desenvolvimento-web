@@ -4,32 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 01</title>
+    <title>Exercício 06</title>
 </head>
 
 <body>
     <a href="../index.html">Voltar</a>
-    <form action="#" method="POST">
+    <form action="ex06resultado.php" method="POST">
 
-        <label for="numero1"><B>Primeiro Número:</B></label>
-        <input type="number" id="numero1" name="numero1" step="0.01" required>
+        <label for="numero"><B>Número:</B></label>
+        <input type="number" id="numero" name="numero" step="1" required>
 
-        <label for="numero2"><B>Segundo Número</B></label>
-        <input type="number" id="numero2" name="numero2" step="0.01" required>
         <div class="buttons">
-            <input type="submit" value="Somar" name="Somar">
-            <input type="reset" value="Limpar" name="Limpar">
+            <input type="submit" value="Fatorial" name="fatorial">
+            <input type="reset" value="Limpar" name="limpar">
         </div>
     </form>
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $n1 = $_POST["numero1"];
-        $n2 = $_POST["numero2"];
-        $soma =  $n1 + $n2;
-        echo "<div class='resultado'> $n1 + $n2 = $soma</div>";
-    }
-    ?>
 
 </body>
 
@@ -44,8 +33,7 @@
         justify-content: center;
         flex-direction: column;
     }
-
-    a {
+    a{
         position: fixed;
         left: 0;
         top: 0;
@@ -58,7 +46,7 @@
         border-radius: 30px;
     }
 
-    a:hover {
+    a:hover{
         background-color: cadetblue;
         color: white;
     }
@@ -76,8 +64,7 @@
     .buttons {
         margin: 10px 0 0 auto;
     }
-
-    .resultado {
+    .resultado{
         border: 3px solid limegreen;
         border-radius: 30px;
         padding: 20px;
