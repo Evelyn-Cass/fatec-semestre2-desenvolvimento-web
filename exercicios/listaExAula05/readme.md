@@ -1,4 +1,4 @@
-- 
+
 # Desenvolvimento Web 2 (DW2)
 Professor: Alex Paulo Lopes Batista
 Data de Entrega: 30/09/2024
@@ -13,7 +13,7 @@ resultados na página de saída (resultados).
 arquivo .ZIP com seu nome completo (exemplo: DW2-LE05-AlexBatista.zip).
 5. Enviar o arquivo compactado no formato .ZIP no MSTeams para que possa ser 
 avaliado pelo professor.
-- 
+---
 Tarefa - Aula 05 - Exercícios de PHP: 
 1. Crie um formulário em PHP que receba dois números e exiba a soma deles na mesma página.
 2. Implemente um formulário em PHP que calcule e exiba o quadrado de um número digitado.
